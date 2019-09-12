@@ -1,0 +1,34 @@
+﻿@{
+    ViewBag.Title = "CadLogin";
+}
+<div class="fundo">
+    <fieldset>
+        <form action="cadLogin" method="post">
+            <h2>CadLogin</h2>
+            <label for="nMail">
+                Email:
+                <input placeholder="Digite aqui seu Email" type="text" name="nEmail" id="iMail" />
+            </label>
+            <br />
+            <label for="nPas">
+                Senha:
+                <input placeholder="Digite aqui sua senha" type="password" name="nPas" id="iPas" />
+            </label>
+            <label for="nPas">
+                Confirme a senha:
+                <input placeholder="Confirme a senha" type="password" name="nConfPas" id="iConfPas" />
+            </label>
+            <br />
+            <input type="submit" name="btnCadastrar" id="iCad" />
+        </form>
+        @ViewBag.Error
+    </fieldset>
+</div>
+
+<style>
+    .fundo{
+
+        box-shadow: 15px 10px 10px 20px;
+        text-align:center;
+    }
+</style>
