@@ -32,7 +32,7 @@ $logado = $_SESSION['login'];
       <li ><a href="cronograma.php">Cronograma</a></li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
-      <li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span>Sair</a></li>
+      <li><a href="sair.php"><span class="glyphicon glyphicon-log-in"></span>Sair</a></li>
     </ul>
   </div>
     </nav>
