@@ -6,9 +6,9 @@ class horario{
         $hour = date('i');//Pega o minuto do servidor
         echo "Agora são ".$data.":".$hour."<br>";//exibe as variáveis
         if ($data >= 0 && $data <= 12){//cria a condição do horario ou seja, se for manha faz o primeiro bloco, tarde o segundo bloco e noite terceiro bloco
-            echo "<img src='img/manha.png'>";
+            echo "<img src='img/manha.png'><br>";
             echo "Bom Dia";
-            echo "<style>.mudacor{ background-color:".'#e5cd9f'.";}</style>";
+            echo "<style>body{ background-color:".'#e5cd9f'.";}</style>";
         }else if($data < 18){
             echo "<img src='img/tarde.gif'><br>";
             echo "Boa Tarde";

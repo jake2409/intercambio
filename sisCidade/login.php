@@ -1,6 +1,5 @@
 <?php
 include 'conexao.php';
-
 ?>
 <!DOCTYPE html>
 <html lang="pt-BR">
@@ -13,8 +12,6 @@ include 'conexao.php';
   <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body onload="carregar()"><!--essa tag onload serve para que toda vez que a pagina carregue ele execute o método que esta sendo solicitado-->
-
-
   <header>
   <nav class="navbar navbar-inverse">
   <div class="container-fluid">
@@ -28,20 +25,18 @@ include 'conexao.php';
       <li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
     </ul>
   </div>
-</nav>
-  </header>
-  
-  <section>
-  <?php
-  require_once "horario.php";//estou chamando a pagina horario.php
-  $horario = new horario();//instancia da classe horario na pagina horario.php
-  $horario->carregar();//acessando o metodo carregar e todos seus atributos
-  
-  ?>
-  
-  </section>
-  <footer>
-      <p>&copy; Gabriel Programador</p>
-  </footer>
+    </nav>
+    </header>
+    <section>
+    <form name="frmAcesso" method="post" action="acesso.php">
+			<p>Usuário:<br>
+				<input type="text" name="txtUsuario" size="35">
+			</p>
+			<p>Senha:<br>
+				<input type="password" name="txtSenha" size="35">
+			</p>
+			<input type="submit" name="btnAcesso" value="Acessar">
+    </form>	
+    </section>
 </body>
 </html>
