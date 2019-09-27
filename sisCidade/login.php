@@ -11,7 +11,7 @@ include 'conexao.php';
   <title>SisCidade</title>
   <link rel="stylesheet" href="css/estilo.css">
 </head>
-<body onload="carregar()"><!--essa tag onload serve para que toda vez que a pagina carregue ele execute o método que esta sendo solicitado-->
+<body>
   <header>
   <nav class="navbar navbar-inverse">
   <div class="container-fluid">
