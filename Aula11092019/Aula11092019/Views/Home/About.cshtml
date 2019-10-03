@@ -1,0 +1,30 @@
+﻿
+@model Aula11092019.Models.Login
+
+
+
+@{
+    ViewBag.Title = "About";
+
+
+    var tipo = ViewBag.teste;
+
+    string layout = "";
+
+    if (tipo == "1")
+    {
+        layout = "~/Views/Shared/_Layout.cshtml";
+    }
+    else
+    {
+        layout = "~/Views/Shared/_Layout2.cshtml";
+    }
+    Layout = layout;
+
+}
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+
+@Html.ActionLink("Logout", "")
+
+<p>Use this area to provide additional information.</p>
